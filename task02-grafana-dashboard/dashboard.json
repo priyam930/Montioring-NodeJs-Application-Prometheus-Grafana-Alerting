@@ -1,0 +1,42 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "nodejs-metrics",
+    "title": "Node.js App Metrics",
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "CPU Usage",
+        "targets": [
+          {
+            "expr": "process_cpu_seconds_total",
+            "legendFormat": "CPU Seconds"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Memory Usage",
+        "targets": [
+          {
+            "expr": "process_resident_memory_bytes",
+            "legendFormat": "Memory Bytes"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Active Users",
+        "targets": [
+          {
+            "expr": "active_users",
+            "legendFormat": "Active Users"
+          }
+        ]
+      }
+    ],
+    "schemaVersion": 30,
+    "version": 1
+  }
+}
